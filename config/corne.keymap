@@ -360,7 +360,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        lower_layer {
+        num_layer {
             // ┌────────────────────────────────────────────┐
 
             label = "LOWER";
@@ -379,10 +379,10 @@
 */
 
             bindings = <
-&kp CAPS   &kp F10  &kp F9  &kp F8     &kp F7           &kp GRAVE        &kp EXCL  &kp AT          &kp HASH      &kp DOLLAR  &kp PERCENT  &kp RGUI
-&kp LCTRL  &kp F11  &kp F3  &kp F2     &kp F1           &kp K_CMENU      &colon    &question       &kp STAR      &kp LPAR    &kp RPAR     &kp AMPS
-&kp LALT   &kp F12  &kp F6  &kp F5     &kp F4           &kp LG(SPACE)    &quote    &lguillement    &rguillement  &lbracket   &rbracket    &kp CARET
-                            &lt 3 TAB  &mt LSHFT SPACE  &trans           &trans    &mt RSHFT BSPC  &lt 3 DEL
+&none  &kp LCTRL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ESCAPE       &kp PLUS         &kp KP_NUMBER_9      &kp KP_N8     &kp KP_N7        &kp PERCENT  &kp RGUI
+&none  &kp LEFT_SHIFT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0     &kp KP_NUMBER_0  &kp LS(KP_NUMBER_4)  &kp KP_N5     &kp KP_NUMBER_6  &kp RPAR     &kp AMPS
+&none  &kp LEFT_ALT    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LG(SPACE)    &kp MINUS        &lguillement         &rguillement  &lbracket        &rbracket    &kp CARET
+                                     &kp TAB       &none         &trans           &trans           &mt RSHFT BSPC       &lt 3 DEL
             >;
         };
 

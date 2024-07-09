@@ -323,6 +323,11 @@
             bindings = <&lang>;
             key-positions = <26 27>;
         };
+
+        printscreen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <10 9>;
+        };
     };
 };
 
@@ -351,10 +356,10 @@
 */
 
             bindings = <
-&kp RBKT       &kp Q           &kp W           &kp E        &kp R                 &kp T        &kp Y      &kp U              &kp I        &kp O            &kp P                    &mt RGUI LBKT
-&kp GRAVE      &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LS(LEFT_SHIFT) F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON  &kp SQT
-&mt LALT BSLH  &kp Z           &kp X           &kp C        &kp V                 &kp B        &kp N      &kp M              &kp COMMA    &kp DOT          &kp FSLH                 &mt RALT MINUS
-                                               &lt 2 TAB    &mt LSHFT SPACE       &lt 1 RET    &lt 1 RET  &mo 3              &lt 2 DEL
+&kp RBKT       &kp Q           &kp W           &kp E        &kp R                 &kp T    &kp Y  &kp U              &kp I        &kp O            &kp P                    &mt RGUI LBKT
+&kp GRAVE      &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LS(LEFT_SHIFT) F  &kp G    &kp H  &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON  &kp SQT
+&mt LALT BSLH  &kp Z           &kp X           &kp C        &kp V                 &kp B    &kp N  &kp M              &kp COMMA    &kp DOT          &kp FSLH                 &mt RALT MINUS
+                                               &lt 2 TAB    &mo 1                 &mo 1    &mo 2  &mo 3              &lt 2 DEL
             >;
         };
 
@@ -363,7 +368,7 @@
         num_layer {
             // ┌────────────────────────────────────────────┐
 
-            label = "LOWER";
+            label = "num";
 
             // └────────────────────────────────────────────┘
             /*
@@ -388,10 +393,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄		
 
-        raise_layer {
+        nav_layer {
             // ┌────────────────────────────────────────────┐
 
-            label = "RAISE";
+            label = "nav";
 
             // └────────────────────────────────────────────┘
             /*
@@ -407,9 +412,9 @@
 */
 
             bindings = <
-&kp BSPC            &kp KP_MULTIPLY  &kp KP_N9  &kp KP_N8  &kp KP_N7        &kp PLUS     &kp C_NEXT  &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_VOL_UP  &kp RGUI
-&mt LCTRL KP_ENTER  &kp KP_SLASH     &kp KP_N3  &kp KP_N2  &kp KP_N1        &kp KP_N0    &kp C_PLAY  &kp LEFT        &kp UP     &kp RIGHT  &kp C_VOL_DN  &kp RCTRL
-&mt LALT EQUAL      &numdot          &kp KP_N6  &kp KP_N5  &kp KP_N4        &kp MINUS    &kp C_PREV  &kp END         &kp DOWN   &kp PG_DN  &kp C_MUTE    &kp RALT
+&kp BSPC            &kp KP_MULTIPLY  &kp KP_N9  &kp KP_N8  &kp KP_N7        &kp PLUS     &kp C_NEXT  &kp HOME        &kp UP_ARROW    &kp PG_UP  &kp C_VOL_UP  &kp LEFT_GUI
+&mt LCTRL KP_ENTER  &kp KP_SLASH     &kp KP_N3  &kp KP_N2  &kp KP_N1        &kp KP_N0    &kp C_PLAY  &kp LEFT        &kp UP          &kp RIGHT  &kp C_VOL_DN  &kp RCTRL
+&mt LALT EQUAL      &numdot          &kp KP_N6  &kp KP_N5  &kp KP_N4        &kp MINUS    &kp C_PREV  &kp END         &kp SCROLLLOCK  &kp PG_DN  &kp C_MUTE    &kp LEFT_ALT
                                                 &trans     &mt LSHFT SPACE  &lt 3 ESC    &lt 3 RET   &mt RSHFT BSPC  &trans
             >;
         };

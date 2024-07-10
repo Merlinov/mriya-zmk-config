@@ -359,7 +359,7 @@
 &kp RBKT       &kp Q           &kp W           &kp E        &kp R                 &kp T    &kp Y  &kp U              &kp I        &kp O            &kp P                    &mt RGUI LBKT
 &kp GRAVE      &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LS(LEFT_SHIFT) F  &kp G    &kp H  &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON  &kp SQT
 &mt LALT BSLH  &kp Z           &kp X           &kp C        &kp V                 &kp B    &kp N  &kp M              &kp COMMA    &kp DOT          &kp FSLH                 &mt RALT MINUS
-                                               &lt 2 TAB    &mo 1                 &mo 1    &mo 2  &mo 3              &lt 2 DEL
+                                               &lt 2 TAB    &mo 1                 &mo 2    &mo 2  &mo 4              &mo 3
             >;
         };
 
@@ -384,10 +384,10 @@
 */
 
             bindings = <
-&none  &kp LCTRL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ESCAPE       &kp PLUS         &kp KP_NUMBER_9      &kp KP_N8     &kp KP_N7        &kp PERCENT  &kp RGUI
-&none  &kp LEFT_SHIFT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0     &kp KP_NUMBER_0  &kp LS(KP_NUMBER_4)  &kp KP_N5     &kp KP_NUMBER_6  &kp RPAR     &kp AMPS
-&none  &kp LEFT_ALT    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LG(SPACE)    &kp MINUS        &lguillement         &rguillement  &lbracket        &rbracket    &kp CARET
-                                     &kp TAB       &none         &trans           &trans           &mt RSHFT BSPC       &lt 3 DEL
+&kp LCTRL  &kp RCTRL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ESCAPE       &kp PLUS         &kp KP_NUMBER_9      &kp KP_N8        &kp KP_N7        &kp KP_NUMLOCK  &kp KP_MULTIPLY
+&kp LSHFT  &kp RSHFT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0     &kp KP_NUMBER_0  &kp LS(KP_NUMBER_4)  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_COMMA    &kp KP_DIVIDE
+&kp LALT   &kp RALT   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LG(SPACE)    &kp MINUS        &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT      &kp KP_ENTER
+                                    &kp TAB       &none         &trans           &trans           &mt RSHFT BSPC       &lt 3 DEL
             >;
         };
 
@@ -412,10 +412,10 @@
 */
 
             bindings = <
-&kp BSPC            &kp KP_MULTIPLY  &kp KP_N9  &kp KP_N8  &kp KP_N7        &kp PLUS     &kp C_NEXT  &kp HOME        &kp UP_ARROW    &kp PG_UP  &kp C_VOL_UP  &kp LEFT_GUI
-&mt LCTRL KP_ENTER  &kp KP_SLASH     &kp KP_N3  &kp KP_N2  &kp KP_N1        &kp KP_N0    &kp C_PLAY  &kp LEFT        &kp UP          &kp RIGHT  &kp C_VOL_DN  &kp RCTRL
-&mt LALT EQUAL      &numdot          &kp KP_N6  &kp KP_N5  &kp KP_N4        &kp MINUS    &kp C_PREV  &kp END         &kp SCROLLLOCK  &kp PG_DN  &kp C_MUTE    &kp LEFT_ALT
-                                                &trans     &mt LSHFT SPACE  &lt 3 ESC    &lt 3 RET   &mt RSHFT BSPC  &trans
+&kp LCTRL  &kp RCTRL  &kp F1  &kp F2  &kp F3           &kp F11      &kp C_NEXT            &kp HOME              &kp UP_ARROW    &kp PG_UP  &kp C_VOL_UP  &kp LEFT_GUI
+&kp LALT   &kp RALT   &kp F4  &kp F5  &kp F6           &kp F10      &kp C_PLAY            &kp LEFT              &kp UP          &kp RIGHT  &kp C_VOL_DN  &kp RCTRL
+&kp LGUI   &kp RGUI   &kp F7  &kp F8  &kp F9           &kp F12      &kp C_PREV            &kp END               &kp SCROLLLOCK  &kp PG_DN  &kp C_MUTE    &kp LEFT_ALT
+                              &trans  &mt LSHFT SPACE  &lt 3 ESC    &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans
             >;
         };
 
@@ -444,6 +444,15 @@
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3     &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &kp CAPS     &kp KP_NUM    &kp INS       &kp SLCK      &kp PAUSE_BREAK  &bt BT_PRV      &bt BT_PRV    &kp PAUSE_BREAK  &kp SLCK      &kp INS       &kp KP_NUM    &kp CAPS
                                          &trans        &soft_off        &trans          &trans        &soft_off        &trans
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+&kp  &kp EXCL        &kp AT                &kp HASH        &kp DLLR                &kp PRCNT            &kp CARET  &kp AMPS           &kp STAR         &kp PIPE               &kp BACKSLASH  &kp
+&kp  &mt LGUI GRAVE  &kp LALT              &kp LCTRL       &mt LSHFT SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp UNDER  &mt RSHFT MINUS    &mt RCTRL EQUAL  &kp RALT               &kp RGUI       &kp
+&kp  &kp LT          &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp                  &kp PLUS   &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GT         &kp
+                                           &kp             &kp                     &kp                  &kp        &kp                &kp
             >;
         };
     };

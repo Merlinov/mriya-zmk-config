@@ -272,6 +272,46 @@
 
             label = "LANG";
         };
+
+        prev_desk: prev_desk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LCTRL>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp LCTRL>;
+
+            label = "PREV_DESK";
+        };
+
+        next_desk: next_desk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LCTRL>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp LCTRL>;
+
+            label = "NEXT_DESK";
+        };
+
+        desk: desk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp TAB>;
+
+            label = "DESK";
+        };
     };
 };
 
@@ -412,9 +452,9 @@
 */
 
             bindings = <
-&kp LCTRL  &kp RCTRL  &kp F1  &kp F2  &kp F3           &kp F11      &kp C_NEXT            &kp HOME              &kp UP_ARROW    &kp PG_UP  &kp C_VOL_UP  &kp LEFT_GUI
-&kp LALT   &kp RALT   &kp F4  &kp F5  &kp F6           &kp F10      &kp C_PLAY            &kp LEFT              &kp DOWN_ARROW  &kp RIGHT  &kp C_VOL_DN  &kp RCTRL
-&kp LGUI   &kp RGUI   &kp F7  &kp F8  &kp F9           &kp F12      &kp C_PREV            &kp END               &kp SCROLLLOCK  &kp PG_DN  &kp C_MUTE    &kp LEFT_ALT
+&kp LCTRL  &kp RCTRL  &kp F1  &kp F2  &kp F3           &kp F11      &none                 &kp PG_UP             &kp UP_ARROW    &kp PG_DN  &kp J       &kp LEFT_GUI
+&kp LALT   &kp RALT   &kp F4  &kp F5  &kp F6           &kp F10      &kp HOME              &kp LEFT              &kp DOWN_ARROW  &kp RIGHT  &kp END     &kp RCTRL
+&kp LGUI   &kp RGUI   &kp F7  &kp F8  &kp F9           &kp F12      &kp C_PREV            &kp END               &kp SCROLLLOCK  &kp PG_DN  &kp C_MUTE  &kp LEFT_ALT
                               &trans  &mt LSHFT SPACE  &lt 3 ESC    &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans
             >;
         };
@@ -453,6 +493,16 @@
 &none  &mt LGUI GRAVE  &kp LALT              &kp LCTRL       &mt LSHFT SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp UNDER  &mt RSHFT MINUS    &mt RCTRL EQUAL  &kp RALT               &kp RGUI       &none
 &none  &kp LT          &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp LSHFT            &kp PLUS   &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GT         &none
                                              &none           &none                   &none                &none      &none              &none
+            >;
+        };
+
+        layer_5 {
+            label = "111";
+            bindings = <
+&none     &none     &kp F1    &kp F2     &kp F3           &kp F11      &none       &kp PG_UP   &kp UP_ARROW    &kp PG_DN   &kp PRINTSCREEN  &none
+&kp LALT  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT        &kp F10      &kp HOME    &kp LEFT    &kp DOWN_ARROW  &kp RIGHT   &kp END          &none
+&kp LGUI  &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT        &kp F12      &kp C_PREV  &prev_desk  &desk           &next_desk  &kp SCROLLLOCK   &none
+                              &trans     &mt LSHFT SPACE  &lt 3 ESC    &none       &none       &trans
             >;
         };
     };

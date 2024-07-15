@@ -496,7 +496,7 @@
             >;
         };
 
-        layer_5 {
+        mediaandfunc {
             label = "111";
             bindings = <
 &none     &none     &kp F1    &kp F2     &kp F3           &kp F11      &none       &kp PG_UP   &kp UP_ARROW    &kp PG_DN   &kp PRINTSCREEN  &none

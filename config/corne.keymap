@@ -433,7 +433,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄		
 
-        nav_layer {
+        media {
             // ┌────────────────────────────────────────────┐
 
             label = "nav";
@@ -452,10 +452,10 @@
 */
 
             bindings = <
-&kp LCTRL  &kp RCTRL  &kp F1  &kp F2  &kp F3           &kp F11      &none                 &kp PG_UP             &kp UP_ARROW    &kp PG_DN  &kp J       &kp LEFT_GUI
-&kp LALT   &kp RALT   &kp F4  &kp F5  &kp F6           &kp F10      &kp HOME              &kp LEFT              &kp DOWN_ARROW  &kp RIGHT  &kp END     &kp RCTRL
-&kp LGUI   &kp RGUI   &kp F7  &kp F8  &kp F9           &kp F12      &kp C_PREV            &kp END               &kp SCROLLLOCK  &kp PG_DN  &kp C_MUTE  &kp LEFT_ALT
-                              &trans  &mt LSHFT SPACE  &lt 3 ESC    &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans
+&kp LCTRL  &kp RCTRL  &kp F1  &kp F2                &kp F3                &kp F11    &none       &kp PG_UP        &kp UP_ARROW       &kp PG_DN  &kp J       &kp LEFT_GUI
+&kp LALT   &kp RALT   &kp F4  &kp F5                &kp F6                &kp F10    &kp HOME    &kp LEFT         &kp DOWN_ARROW     &kp RIGHT  &kp END     &kp RCTRL
+&kp LGUI   &kp RGUI   &kp F7  &kp F8                &kp F9                &kp F12    &kp C_PREV  &kp END          &kp SCROLLLOCK     &kp PG_DN  &kp C_MUTE  &kp LEFT_ALT
+                              &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &none      &kp K_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN
             >;
         };
 
@@ -496,13 +496,13 @@
             >;
         };
 
-        mediaandfunc {
+        nav {
             label = "111";
             bindings = <
-&none     &none     &kp F1    &kp F2     &kp F3           &kp F11      &none       &kp PG_UP   &kp UP_ARROW    &kp PG_DN   &kp PRINTSCREEN  &none
-&kp LALT  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT        &kp F10      &kp HOME    &kp LEFT    &kp DOWN_ARROW  &kp RIGHT   &kp END          &none
-&kp LGUI  &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT        &kp F12      &kp C_PREV  &prev_desk  &desk           &next_desk  &kp SCROLLLOCK   &none
-                              &trans     &mt LSHFT SPACE  &lt 3 ESC    &none       &none       &trans
+&none  &none     &none     &none      &none      &none    &none        &kp PG_UP   &kp UP_ARROW    &kp PG_DN   &kp PRINTSCREEN  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp HOME     &kp LEFT    &kp DOWN_ARROW  &kp RIGHT   &kp END          &none
+&none  &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT  &none    &kp C_PAUSE  &prev_desk  &desk           &next_desk  &kp SCROLLLOCK   &none
+                           &none      &none      &none    &none        &none       &trans
             >;
         };
     };

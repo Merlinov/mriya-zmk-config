@@ -510,7 +510,7 @@
         mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans   U_MS_U  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &trans  &mkp LCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;

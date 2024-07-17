@@ -19,16 +19,7 @@
 
 &mt { quick_tap_ms = <220>; };
 
- behaviors {
-            hm: homerow_mods {
-                compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <2>;
-                tapping-term-ms = <180>;
-                quick-tap-ms = <180>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
-        };
+ 
 
 / {
     macros {
@@ -45,6 +36,17 @@
                 <&kp KP_N4 &kp KP_N6>,
                 <&macro_release>,
                 <&kp LALT>;
+        };
+
+behaviors {
+            hm: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                tapping-term-ms = <180>;
+                quick-tap-ms = <180>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
         };
 
         grtsgn: grtsgn {

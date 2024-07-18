@@ -511,14 +511,13 @@
             >;
         };
 
-        mouse {
-            label = "wer";
-            bindings = <
-&none  &none     &none     &none      &none	&none    &none     &msc SCROLL_UP    &mmv MOVE_UP    &msc SCROLL_DOWN   &none  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &none  &none
-&none  &none     &none     &none      &none      &none    &none     &msc SCROLL_LEFT  &mkp MB3        &msc SCROLL_RIGHT  &none  &none
-                           &none      &none      &none    &mkp MB1  &mkp MB2          &none
-            >;
-        };
+       mouse_layer {
+                        bindings = <
+   &trans  &trans   &trans    &trans   &trans    &trans      &trans    U_WH_U     U_MS_U     U_WH_D    &trans    &trans 
+   &trans  &kp LALT &kp LCTRL &kp LGUI &kp LSHFT &kp RALT    U_WH_R    U_MS_L     U_MS_D     U_MS_R    U_WH_L    &trans
+   &trans  &trans   &trans    &trans   &trans    &trans      &trans    &trans     &trans    &trans    &trans    &trans 
+                              &trans   &trans    &trans      U_BTN1    U_BTN3     U_BTN2
+                        >;
+                };
     };
 };

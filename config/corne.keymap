@@ -514,9 +514,9 @@
         layer_7 {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans    &trans    &trans          &mmv MOVE_UP    &trans           &none   &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
+&trans  &trans    &mkp MB2  &mkp MB3  &mkp MB1    &trans    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &trans    &none           &none           &trans           &trans  &trans
-                            &trans     &trans     &trans    &mkp MB1  &mkp MB2        &mkp MB3
+                            &trans     &trans     &trans    &trans   &trans       &trans 
             >;
         };
     };

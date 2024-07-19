@@ -513,7 +513,7 @@
 
         layer_7 {
             bindings = <
-&trans  &msc SCROLL_LEFT    &msc SCROLL_RIGHT     &msc SCROLL_DOWN    &msc SCROLL_UP    &trans     &trans    &trans          &mmv MOVE_UP    &trans           &none   &trans
+&trans  &mwh SCROLL_LEFT    &mwh SCROLL_RIGHT     &mwh SCROLL_DOWN    &mwh SCROLL_UP    &trans     &trans    &trans          &mmv MOVE_UP    &trans           &none   &trans
 &trans  &trans    &mkp MB2  &mkp MB3  &mkp MB1    &trans    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &trans    &none           &none           &trans           &trans  &trans
                             &trans     &trans     &trans    &trans   &trans       &trans 

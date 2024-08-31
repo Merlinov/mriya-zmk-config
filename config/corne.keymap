@@ -396,6 +396,11 @@
             bindings = <&tog 7>;
             key-positions = <5 25>;
         };
+
+        left {
+            bindings = <&tog 8>;
+            key-positions = <10 6>;
+        };
     };
 };
 
@@ -549,6 +554,15 @@
 &kp TAB    &kp A  &kp S  &kp D      &kp F     &kp G        &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
                          &kp SPACE  &kp LALT  &kp LCTRL    &trans  &trans  &trans
+            >;
+        };
+
+        lefthanded_shooter {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N1     &kp N2     &kp N3    &kp N4  &kp N5  &kp N6
+&trans  &trans  &trans  &trans  &trans  &trans    &kp G      &kp R      &kp W     &kp Q   &kp E   &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans    &kp M      &kp A      &kp S     &kp D   &kp C   &kp LSHFT
+                        &trans  &trans  &trans    &kp LCTRL  &kp SPACE  &kp LALT
             >;
         };
     };

@@ -565,5 +565,14 @@
                         &trans  &trans  &trans    &kp LCTRL  &kp SPACE  &kp LALT
             >;
         };
+
+        shooters {
+            bindings = <
+&kp N1     &kp N2  &kp N3  &kp N4    &kp N5     &kp N6     &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+&kp LSHFT  &kp Q   &kp W   &kp E     &kp R      &kp T      &kp L   &kp I   &kp O   &kp P   &kp LBKT   &kp RBKT
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F      &kp G      &kp C   &kp V   &kp B   &kp N   &kp M      &kp FSLH
+                           &kp LALT  &kp SPACE  &kp RET    &mo 5   &mo 2   &mo 1
+            >;
+        };
     };
 };

@@ -3,17 +3,11 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: Merlinov
-      url-base: https://github.com/Merlinov
-      - name: gpeye                         #new entry
-      url-base: https://github.com/GPeye  #new entry
-  
+      url-base: https://github.com/Merlinov  
   projects:
     - name: zmk
       remote: Merlinov
       revision: main
       import: app/west.yml
-      - name: nice-view-mod                 #new entry
-      remote: gpeye                       #new entry
-      revision: main                      #new entry
   self:
     path: config

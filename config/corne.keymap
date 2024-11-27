@@ -401,6 +401,11 @@
             bindings = <&tog 8>;
             key-positions = <10 6>;
         };
+
+        shooters_toogle {
+            bindings = <&tog 9>;
+            key-positions = <0 5>;
+        };
     };
 };
 

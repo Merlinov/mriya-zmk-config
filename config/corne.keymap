@@ -556,10 +556,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans          &msc SCRL_RIGHT  &msc SCRL_DOWN  &msc SCROLL_UP  &trans     &trans  &trans          &mmv MOVE_UP    &trans           &none   &trans
-&trans  &msc SCRL_LEFT  &mkp MB2         &mkp MB3        &mkp MB1        &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
-&trans  &trans          &prev_desk       &desk           &next_desk      &trans    &trans  &none           &none           &trans           &trans  &trans
-                                         &trans          &trans          &trans    &trans  &trans          &trans
+&trans  &trans          &trans      &msc SCRL_DOWN  &msc SCROLL_UP  &none     &trans  &trans          &mmv MOVE_UP    &trans           &none   &trans
+&trans  &msc SCRL_LEFT  &mkp MB2    &mkp MB3        &mkp MB1        &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
+&trans  &trans          &prev_desk  &desk           &next_desk      &trans    &trans  &none           &none           &trans           &trans  &trans
+                                    &trans          &trans          &trans    &trans  &trans          &trans
             >;
         };
 

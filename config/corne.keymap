@@ -403,8 +403,13 @@
         };
 
         shooters_toogle {
-            bindings = <&tog 9>;
+            bindings = <&to 9>;
             key-positions = <0 5>;
+        };
+
+        to_default {
+            bindings = <&to 0>;
+            key-positions = <1 4>;
         };
     };
 };

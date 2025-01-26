@@ -419,6 +419,11 @@
             bindings = <&tog 9>;
             key-positions = <0 5>;
         };
+
+        carbon {
+            bindings = <&tog 8>;
+            key-positions = <12 17>;
+        };
     };
 };
 
@@ -575,12 +580,12 @@
             >;
         };
 
-        lefthanded_shooter {
+        carbon {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N1     &kp N2     &kp N3    &kp N4  &kp N5  &kp N6
-&trans  &trans  &trans  &trans  &trans  &trans    &kp G      &kp R      &kp W     &kp Q   &kp E   &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans    &kp M      &kp A      &kp S     &kp D   &kp C   &kp LSHFT
-                        &trans  &trans  &trans    &kp LCTRL  &kp SPACE  &kp LALT
+&kp ESC   &trans     &trans     &trans     &trans     &trans    &kp N1     &kp N2     &kp N3    &kp N4  &kp N5  &kp N6
+&kp LALT  &kp LCTRL  &kp LSHFT  &kp UP     &kp RET    &trans    &kp G      &kp R      &kp W     &kp Q   &kp E   &kp TAB
+&kp TAB   &kp Z      &kp LEFT   &kp DOWN   &kp RIGHT  &kp V     &kp M      &kp A      &kp S     &kp D   &kp C   &kp LSHFT
+                                &kp SPACE  &kp X      &trans    &kp LCTRL  &kp SPACE  &kp LALT
             >;
         };
 

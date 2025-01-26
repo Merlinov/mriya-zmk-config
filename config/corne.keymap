@@ -582,10 +582,10 @@
 
         carbon {
             bindings = <
-&kp ESC   &trans     &trans     &trans     &trans     &trans    &kp N1     &kp N2     &kp N3    &kp N4  &kp N5  &kp N6
-&kp LALT  &kp LCTRL  &kp LSHFT  &kp UP     &kp RET    &trans    &kp G      &kp R      &kp W     &kp Q   &kp E   &kp TAB
-&kp TAB   &kp Z      &kp LEFT   &kp DOWN   &kp RIGHT  &kp V     &kp M      &kp A      &kp S     &kp D   &kp C   &kp LSHFT
-                                &kp SPACE  &kp X      &trans    &kp LCTRL  &kp SPACE  &kp LALT
+&kp ENTER  &trans     &trans     &trans     &trans     &trans       &kp ENTER  &kp ENTER  &kp UP    &kp ENTER  &kp LSHFT  &kp ESC
+&kp ENTER  &kp ENTER  &kp ENTER  &kp ENTER  &kp RET    &trans       &kp Z      &kp LEFT   &kp DOWN  &kp RIGHT  &kp LCTRL  &kp LALT
+&kp ENTER  &kp ENTER  &kp ENTER  &kp ENTER  &kp ENTER  &kp ENTER    &kp C      &kp A      &kp S     &kp D      &kp ENTER  &kp TAB
+                                 &kp ENTER  &kp ENTER  &trans       &kp X      &kp SPACE  &kp B
             >;
         };
 

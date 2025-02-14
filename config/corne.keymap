@@ -520,7 +520,7 @@
         adjust_layer {
             // ┌────────────────────────────────────────────┐
 
-            label = "ADJUST";
+            label = "bluetooth";
 
             // └────────────────────────────────────────────┘
             /*
@@ -550,10 +550,12 @@
 &none  &kp LT          &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp LSHFT            &kp PLUS   &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GT         &none
                                              &none           &none                   &none                &none      &none              &none
             >;
+
+            label = "symbols";
         };
 
         nav {
-            label = "111";
+            label = "nav";
             bindings = <
 &kp ESCAPE  &none     &none     &none      &none      &none        &none        &kp PG_UP  &kp UP_ARROW    &kp PG_DN  &kp PRINTSCREEN  &none
 &none       &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp ENTER    &kp HOME     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp END          &none
@@ -569,6 +571,8 @@
 &trans  &trans          &prev_desk       &desk           &next_desk    &trans    &trans  &none           &none           &trans           &trans  &trans
                                          &trans          &trans        &trans    &trans  &trans          &trans
             >;
+
+            label = "mouse";
         };
 
         dota {
@@ -578,6 +582,8 @@
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
                          &kp SPACE  &kp LALT  &kp LCTRL    &trans  &trans  &trans
             >;
+
+            label = "dota";
         };
 
         carbon {
@@ -587,6 +593,8 @@
 &kp ENTER  &kp ENTER  &kp ENTER  &kp ENTER  &kp ENTER  &kp ENTER            &kp X      &kp C      &kp V      &kp B      &kp Z  &kp TAB
                                  &kp ENTER  &kp ENTER  &trans               &kp LSHFT  &kp SPACE  &kp LCTRL
             >;
+
+            label = "carbon";
         };
 
         shooters {
@@ -596,6 +604,8 @@
 &kp LCTRL  &kp A   &kp S   &kp D     &kp F      &kp G      &kp C   &kp V   &kp B   &kp COMMA  &kp DOT   &kp FSLH
                            &kp LALT  &kp SPACE  &kp RET    &mo 5   &mo 2   &mo 1
             >;
+
+            label = "shooters";
         };
     };
 };

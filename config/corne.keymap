@@ -520,7 +520,7 @@
         adjust_layer {
             // ┌────────────────────────────────────────────┐
 
-            label = "bluetooth";
+            label = "blue2";
 
             // └────────────────────────────────────────────┘
             /*
@@ -566,10 +566,10 @@
 
         mouse {
             bindings = <
-&trans  &msc MOVE_Y(-5)  &msc MOVE_Y(5)  &msc MOVE_X(-5)  &msc MOVE_X(5)  &none     &trans  &trans          &mmv MOVE_UP    &trans           &none   &trans
-&trans  &none            &mkp MB2        &mkp MB3         &mkp MB1        &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
-&trans  &trans           &prev_desk      &desk            &next_desk      &trans    &trans  &none           &none           &trans           &trans  &trans
-                                         &trans           &trans          &trans    &trans  &trans          &trans
+&trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN  &msc SCRL_UP  &none     &trans  &trans          &mmv MOVE_UP    &trans           &none   &trans
+&trans  &none           &mkp MB3         &mkp MB2        &mkp MB1      &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
+&trans  &trans          &prev_desk       &desk           &next_desk    &trans    &trans  &none           &none           &trans           &trans  &trans
+                                         &trans          &trans        &trans    &trans  &trans          &trans
             >;
 
             label = "mouse";

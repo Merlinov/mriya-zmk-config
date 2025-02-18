@@ -379,11 +379,6 @@
             key-positions = <2 3>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <>;
-        };
-
         bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
